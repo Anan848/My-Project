@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profile Anan</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="name">
+                <a href="index.html">ທ້າວ.ອານັນ</a>
+            </div>
+
+            <!-- Menu -->
+            <ul class="menu" id="menu">
+                <li><a href="#profile">ໜ້າຫຼັກ</a></li>
+                <li><a href="#about">ປະຫວັດ</a></li>
+                <li><a href="#skill">ທັກສະ</a></li>
+                <li><a href="#comment">ຄວາມຄິດເຫັນ</a></li>
+                <li><a href="#contact">ຕິດຕໍ່</a></li>
+            </ul>
+
+            <div class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content Profile -->
+    <div class="container-profile" id="profile">
+        <div class="container-name">
+            <span style="font-size: 4rem;">ສະບາຍດີ!</span>
+            <h1 style="font-size: 3rem;" id="typewriter"></h1>
+            <span style="font-size: 1.2rem;">ຍິນດີຕ້ອງຮັບສູ່ເວັບໄຊຂອງຂ້ອຍ</span>
+        </div>
+
+        <div class="container-image">
+            <img src="image/1.png" alt="">
+        </div>
+    </div>
+
+    <!-- Content History -->
+    <div style="margin-top: -10vh;" class="container-about" id="about">
+        <h2>ປະຫວັດ</h2>
+
+        <div class="about">
+            <div class="about-img">
+                <img src="image/2.jpg" alt="">
+            </div>
+
+            <div style="margin: 0 10vh;">
+                <span style="font-size: 2.5rem; font-weight: 700;">ສະບາຍດີ.ຂ້ອຍຊື່</span>
+                <p style="font-size: 2.5rem; font-weight: 700; margin-top: 0;">ທ້າວ.ອານັນ ສີສຸພັນ</p>
+                <p style="font-size: 1.2rem; margin-top: -3vh;">ອາຍຸ 19 ປີ. ອາໄສຢູ່ ບ້ານ ໂພນໝີ, ເມືອງ ວຽງຄຳ, ແຂວງ ວຽງຈັນ. ມີຄວາມສົນໃຈ ແລະ 
+                    ຕ້ອງການຫາຄວາມຮູ້ໃໝ່ ທາງດ້ານການຂຽນ ແລະ ພັທະນາເວັປໄຊ ທີ່ສາມາດໃຊ້ງານໄດ້ສະດວກ ແລະ ເຂົ້າເຖິງງ່າຍສຳລັບທຸກຄົນ.
+                    ປັດຈຸບັນກຳລັັງສຶກສາຢູ່ທີ່ ວິທະຍາໄລເຕັກນິກ ແຂວງວຽງຈັນ ພາກວິຊາ ບໍລິຫານທຸລະກິດ ສາຂາ ເຕັກໂນໂລຊີຄອມພິວເຕີ.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="skill-section" id="skill">
+        <h2>ທັກສະ</h2>
+
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('tech', this)">Tech Stack</button>
+            <button class="tab" onclick="switchTab('tools', this)">Tools</button>
+        </div>
+
+        <!-- Content Tech Stack -->
+        <div class="skills-grid active" id="tech">
+            <div class="skill-box">
+                  <ion-icon name="logo-html5" class="icon html"></ion-icon>
+                <div>
+                    <span>HTML</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <ion-icon name="logo-css3" class="icon css"></ion-icon>
+                <div>
+                    <span>CSS3</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <ion-icon name="logo-javascript" class="icon js"></ion-icon>
+                <div>
+                    <span>JAVASCRIPT</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <img src="image/php.png" alt="">
+                <div>
+                    <span>PHP</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <img src="image/tailwind_css.png" alt="">
+                <div>
+                    <span>TAILWIND CSS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Tools -->
+        <div class="skills-grid" id="tools">
+            <div class="skill-box">
+                  <img src="image/vscode.png" alt="">
+                <div>
+                    <span>VS CODE</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                  <i class="fa-solid fa-robot"></i>
+                <div>
+                    <span>AI CHAT</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <img src="image/github.png" alt="">
+                <div>
+                    <span>GITHUB</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <img src="image/canva.png" alt="">
+                <div>
+                    <span>CANVA</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <img src="image/word.png" alt="">
+                <div>
+                    <span>WORD</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <img src="image/excel.png" alt="">
+                <div>
+                    <span>EXCEL</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <img src="image/powerpoint.png" alt="">
+                <div>
+                    <span style="margin-left: -10px;">POWERPOINT</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <img src="image/doc.png" alt="">
+                <div>
+                    <span>DOCS</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <img src="image/sheet.png" alt="">
+                <div>
+                    <span>SHEET</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <img src="image/slide.png" alt="">
+                <div>
+                    <span>SLIDES</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-comment" id="comment">
+        <div class="comment">
+            <span>ສະແດງຄວາມຄິດເຫັນ</span>
+            <p>ອີເມວຂອງເຈົ້າຈະບໍ່ສະແດງໃຫ້ຄົນອື່ນເຫັນ</ຍ>
+            <form>
+                <input type="text" placeholder="ຊື່ຂອງເຈົ້າ" required>
+                <input type="email" placeholder="ອີເມວຂອງເຈົ້າ" required>
+                <input type="text" placeholder="ຫົວຂໍ້">
+                <textarea placeholder="ເນື້ອໃນຂໍ້ຄວາມທີ່ຕ້ອງການສົ່ງ" rows="5" required></textarea>
+                <button>ສົ່ງຂໍ້ຄວາມ</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2025 ທ້າວ.ອານັນ ສີສຸພັນ | ເວັບໄຊທ໌ສ່ວນຕົວ</p>
+
+        <div class="link-contact">
+            <div class="icon-facebook">
+                <a href="https://www.facebook.com/share/195W8Gn4kw/" target="_blank"><img src="image/facebook.png" alt="facebook"></a>
+            </div>
+
+            <div class="icon-whatapp">
+                <a href="http://wa.me/8562029595385" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+
+            <div class="icon-gmail">
+                <a href="mailto:arnunssp557@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="icon-github">
+                <a href="https://github.com/Anan848" target="_blank"><img src="image/github.png" alt="github"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function() {
+            $(".toggle").on("click", function () {
+                const menu = $(".menu");
+                const icon = $(this).find("ion-icon");
+
+                if (menu.hasClass("active")) {
+                    menu.removeClass("active");
+                    icon.fadeOut(150, function () {
+                        icon.attr("name", "menu-outline").fadeIn(150);
+                    });
+                } else {
+                    menu.addClass("active");
+                    icon.fadeOut(150, function () {
+                        icon.attr("name", "close-outline").fadeIn(150);
+                    });
+                }
+            });
+        });
+
+        const text = "ຂ້ອຍຊື່ ອານັນ ສີສຸພັນ";
+        const element = document.getElementById("typewriter");
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(type, 150); // ปรับความเร็วได้ (150ms ต่ออักษร)
+            }
+        }
+
+        type(); // เริ่มพิมพ์
+
+        function switchTab(tabId, btn) {
+        // เปลี่ยนแท็บ
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        btn.classList.add('active');
+
+        // แสดงเฉพาะหมวดที่เลือก
+        document.querySelectorAll('.skills-grid').forEach(g => g.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

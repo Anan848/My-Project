@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans Lao Looped", sans-serif;
+    font-optical-sizing: auto;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    background: linear-gradient(rgba(98, 121, 144, 0.65), rgba(84, 172, 194, 0.65)),
+			url(image/bg.jpeg) no-repeat fixed center;
+	background-size: cover;
+}
+
+textarea, input, button {
+    font-family: "Noto Sans Lao Looped", sans-serif;
+    font-optical-sizing: auto;
+}
+
+nav {
+    background: #f2f2f2;
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+}
+
+.name {
+    flex: 1;
+}
+
+.name a {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 5rem;
+}
+
+.name a:hover {
+    color: #26ccff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 3rem;
+}
+
+.menu li a {
+    padding: 10px 20px;
+    font-size: 1.4rem;
+}
+
+.menu li a:hover {
+    background: #ccc;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+
+/* Contet Profile */
+.container-profile {
+    width: 100%;
+}
+
+.container-profile {
+    display: flex;
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-name {
+    margin: 0 15vh;
+    line-height: 4vh;
+    font-weight: 700;
+}
+
+.container-image img {
+    width: 50vh;
+    height: 65vh;
+    border-radius: 20px;
+}
+
+/* Contet About */
+.container-about {
+    margin: 20vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    background: rgba(204, 204, 204, 0.2);
+    border-radius: 20px;
+}
+
+.container-about h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-img img {
+    width: 45vh;
+    height: 45vh;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 10vh;
+    border: 2px solid #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contet Skill */
+.skill-section {
+    padding: 0 10vh;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.skill-section h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 40px;
+    background: #264de4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.tab.active {
+    background: #26ccff; /* สีทอง */
+    color: #000;
+    font-weight: bold;
+}
+
+.skills-grid {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.skills-grid.active {
+    display: grid;
+}
+
+.skill-box {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 8px;
+    align-items: center;
+    border: 1px solid #525252;
+    transition: transform 0.2s;
+}
+
+.skill-box img {
+    width: 6vh;
+    height: 6vh;
+    margin: 10px;
+}
+
+.skill-box:hover {
+    transform: scale(1.03);
+}
+
+.icon {
+    font-size: 6vh;
+    margin: 10px;
+}
+
+.fa-robot {
+    font-size: 6vh;
+    margin: 10px;
+    color: #000;
+}
+
+/* สีเฉพาะแต่ละโลโก้ */
+.icon.html {
+    color: #e34c26;
+}
+
+.icon.css {
+    color: #264de4;
+}
+
+.icon.js {
+    color: #f0db4f;
+}
+
+
+.container-comment {
+    margin: 15vh 20vh;
+}
+
+.comment span {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: -5px;
+}
+
+.comment p {
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.comment form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment input,
+.comment textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.comment button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #2de91f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.comment button:hover {
+    background-color: #58d54fda;
+}
+
+footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.link-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.link-contact img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.icon-facebook a {
+    margin: 0 10px;
+    color: #007bff;
+    font-size: 2.5rem;
+}
+
+.icon-whatapp a {
+    margin: 0 10px;
+    color: #16ef49;
+    font-size: 2.5rem;
+}
+
+.icon-gmail a {
+    margin: 0 10px;
+    color: #e3e3e3f3;
+    font-size: 2.5rem;
+}
+
+.icon-github a img {
+    margin: 12px 10px;
+    color: #e3e3e3f3;
+    border-radius: 20px;
+    font-size: 2.5rem;
+}
+
+/* Reponsive */
+
+/* Media query for screens 600px and below */
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 10px 25px;
+    }
+
+    .name {
+        margin-left: -4rem;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 12px 16px;
+        font-size: 1.2rem;
+    }
+
+    .menu li a:hover {
+        background: #ccc;
+        color: #fff;
+        border-radius: 15px;
+    }
+
+    .menu.active, .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    /* Profile Section */
+    .container-profile {
+        flex-direction: column;
+        padding: 10vh 5vh;
+        text-align: center;
+    }
+
+    .container-name {
+        margin: 0;
+        line-height: 5vh;
+    }
+
+    .container-image img {
+        width: 50vh;
+        height: 60vh;
+        margin-top: 20px;
+    }
+
+    /* About Section */
+    .container-about {
+        margin: 5vh;
+        padding: 0 2vh;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img img {
+        width: 35vh;
+        height: 35vh;
+        margin: 0 auto 20px auto;
+    }
+
+    .about div[style*="margin"] {
+        margin: 0 5vw;
+        text-align: center;
+    }
+
+    /* Skills Section */
+    .skill-section {
+        padding: 0 5vw;
+        width: 100%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .skill-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skill-box img, .icon, .fa-robot {
+        width: 5vh;
+        height: 5vh;
+        font-size: 5vh;
+    }
+
+    /* Comment Section */
+    .container-comment {
+        margin: 10vh 5vw;
+    }
+
+    .comment p {
+        text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    .link-contact {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .link-contact img,
+    .icon-facebook a,
+    .icon-whatapp a,
+    .icon-gmail a,
+    .icon-github a img {
+        width: 2rem;
+        height: 2rem;
+        font-size: 2rem;
+    }
+
+}
+
+/* Media query for tablets (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 10px 25px;
+    }
+
+    .name {
+        margin-left: -4rem;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 12px 16px;
+        font-size: 1.2rem;
+    }
+
+    .menu li a:hover {
+        background: #ccc;
+        color: #fff;
+        border-radius: 15px;
+    }
+
+    .menu.active, .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    /* Profile Section */
+    .container-profile {
+        flex-direction: column;
+        padding: 10vh 8vw;
+        text-align: center;
+    }
+
+    .container-name {
+        margin: 0 5vw;
+        line-height: 5vh;
+    }
+
+    .container-image img {
+        width: 70vh;
+        height: 90vh;
+        margin-top: 20px;
+    }
+
+    .container-about {
+        margin: 10vh 5vw;
+        padding: 0 5vh;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img img {
+        width: 40vh;
+        height: 40vh;
+        margin-bottom: 20px;
+    }
+
+    .about div[style*="margin"] {
+        margin: 0 5vw;
+        text-align: center;
+    }
+
+    .skill-section {
+        padding: 0 5vw;
+        width: 100%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .skill-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skill-box img, .icon, .fa-robot {
+        width: 6vh;
+        height: 6vh;
+        font-size: 6vh;
+    }
+
+    .container-comment {
+        margin: 10vh 5vw;
+    }
+
+    .comment p {
+        text-align: center;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+
+    .link-contact {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .link-contact img,
+    .icon-facebook a,
+    .icon-whatapp a,
+    .icon-gmail a,
+    .icon-github a img {
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 2.2rem;
+    }
+}
